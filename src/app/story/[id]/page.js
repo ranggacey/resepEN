@@ -5,30 +5,33 @@ import { useParams } from "next/navigation";
 import ceritaData from "@/data/cerita.json";
 
 export default function StoryPage() {
-  const { id } = useParams();
-  const story = ceritaData.find((s) => s.id.toString() === id);
-  const [currentChoiceId, setCurrentChoiceId] = useState(null);
-  const [currentNode, setCurrentNode] = useState(null);
-  const [ending, setEnding] = useState(null);
+    const { id } = useParams();
+    const story = ceritaData.find((s) => s.id.toString() === id);
+    const [currentChoiceId, setCurrentChoiceId] = useState(null);
+    const [currentNode, setCurrentNode] = useState(null);
+    const [ending, setEnding] = useState(null);
+  
 
-  useEffect(() => {
-    if (story && story.choices && story.choices.length > 0) {
-      // Mulai dari pilihan pertama
-      const firstChoice = story.choices.find((c) => c.id === "1A");
-      setCurrentChoiceId("1A");
-      setCurrentNode(firstChoice);
-    }
-  }, [story]);
+    useEffect(() => {
+        if (story && story.choices && story.choices.length > 0) {
+          const firstChoice = story.choices.find((c) => c.id === "1A");
+          setCurrentChoiceId("1A");
+          setCurrentNode(firstChoice);
+        }
+      }, [story]);
+    
+      const handleOptionClick = (nextId) => {
+        if (nextId.startsWith("ENDING")) {
+          const endingFound = story.endings.find((e) => e.id === nextId);
+          setEnding(endingFound);
+        } else {
+          const nextNode = story.choices.find((c) => c.id === nextId);
+          setCurrentChoiceId(nextId);
+          setCurrentNode(nextNode);
+        }
+      };
 
-  const handleOptionClick = (nextId) => {
-    const nextNode = story.choices.find((c) => c.id === nextId);
-    if (nextId.startsWith("ENDING")) {
-      setEnding(nextNode);
-    } else {
-      setCurrentChoiceId(nextId);
-      setCurrentNode(nextNode);
-    }
-  };
+
 
   if (!story) {
     return <div className="text-center text-white">Cerita tidak ditemukan.</div>;
@@ -76,4 +79,6 @@ export default function StoryPage() {
       </div>
     </div>
   );
+
+  
 }

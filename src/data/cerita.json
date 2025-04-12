@@ -1,103 +1,269 @@
 [
-{
-    "id": 1,
-    "title": "Kisah Detektif Korban Pembunuhan",
-    "thumbnail": "/images/story2.jpg",
-    "description": "Kisah detektif yang jadi korban pembunuhan? Wait what?! Cerita ini penuh plot twist dan pilihan yang bisa bikin lu nyesel seumur hidup.",
-    "intro": "Lu main jadi Detektif Ray. Tapi tenang, ini bukan detektif biasa. Lu dibunuh di awal cerita, terus lu bangkit lagi dalam bentuk roh. Misi lu? Cari tau siapa yang bunuh lu... dari alam baka. Satu-satunya cara buat pergi dengan tenang, ya bongkar semuanya.",
-    "choices": [
-      {
-        "id": "1A",
-        "question": "Lu sadar udah mati. Sekarang, mau ngapain dulu?",
-        "options": [
-          {
-            "text": "Ikutin pacar lu yang nangis-nangis di kuburan",
-            "nextChoice": "2A"
-          },
-          {
-            "text": "Masuk ke kantor polisi, siapa tau bisa nguping",
-            "nextChoice": "2B"
-          },
-          {
-            "text": "Keliling tempat kejadian perkara, cari petunjuk",
-            "nextChoice": "2C"
-          }
+    {
+        "id": 1,
+        "title": "Kisah Detektif Korban Pembunuhan",
+        "thumbnail": "/images/story2.jpg",
+        "description": "Kisah detektif yang jadi korban pembunuhan? Wait what?! Cerita ini penuh plot twist dan pilihan yang bisa bikin lu nyesel seumur hidup.",
+        "intro": "Lu main jadi Detektif Ray. Tapi tenang, ini bukan detektif biasa. Lu dibunuh di awal cerita, terus lu bangkit lagi dalam bentuk roh. Misi lu? Cari tau siapa yang bunuh lu... dari alam baka. Satu-satunya cara buat pergi dengan tenang, ya bongkar semuanya.",
+        "choices": [
+            {
+                "id": "1A",
+                "question": "Lu sadar udah mati. Sekarang, mau ngapain dulu?",
+                "options": [
+                    {
+                        "text": "Ikutin pacar lu yang nangis-nangis di kuburan",
+                        "nextChoice": "2A"
+                    },
+                    {
+                        "text": "Masuk ke kantor polisi, siapa tau bisa nguping",
+                        "nextChoice": "2B"
+                    },
+                    {
+                        "text": "Keliling tempat kejadian perkara, cari petunjuk",
+                        "nextChoice": "2C"
+                    }
+                ]
+            },
+            {
+                "id": "2A",
+                "question": "Lu liat pacar lu ngobrol sama seseorang di telepon. Tapi ngomongnya aneh...",
+                "options": [
+                    {
+                        "text": "Intip isi teleponnya",
+                        "nextChoice": "3A"
+                    },
+                    {
+                        "text": "Percaya aja dulu, lanjut ngikutin",
+                        "nextChoice": "3B"
+                    }
+                ]
+            },
+            {
+                "id": "2B",
+                "question": "Lu denger rekan kerja lu, Detektif Hadi, bilang ke bos kalau kasus lu mau ditutup.",
+                "options": [
+                    {
+                        "text": "Marah, coba manifestasiin diri biar bisa ganggu dia",
+                        "nextChoice": "3C"
+                    },
+                    {
+                        "text": "Catet semua info yang dia bilang, siapa tau ada nama-nama penting",
+                        "nextChoice": "3D"
+                    }
+                ]
+            },
+            {
+                "id": "2C",
+                "question": "Lu nemu kalung kecil di deket TKP. Kayaknya milik seseorang yang dikenal.",
+                "options": [
+                    {
+                        "text": "Flashback... inget siapa yang punya kalung itu?",
+                        "nextChoice": "3E"
+                    },
+                    {
+                        "text": "Cuekin, lanjut nyari petunjuk lain",
+                        "nextChoice": "3F"
+                    }
+                ]
+            },
+            {
+                "id": "3A",
+                "question": "Isi pesannya: 'Udah selesai. Dia gak akan ganggu kita lagi.'",
+                "options": [
+                    {
+                        "text": "Ikutin terus, lu curiga banget",
+                        "nextChoice": "4A"
+                    },
+                    {
+                        "text": "Pergi cari bukti lain",
+                        "nextChoice": "4B"
+                    }
+                ]
+            },
+            {
+                "id": "3B",
+                "question": "Lu terus ikutin pacar lu, tapi dia malah ke tempat partner kerja lu. Curiga makin kuat.",
+                "options": [
+                    {
+                        "text": "Muncul di depannya dan teriak",
+                        "nextChoice": "4C"
+                    },
+                    {
+                        "text": "Dengerin percakapan mereka",
+                        "nextChoice": "4A"
+                    }
+                ]
+            },
+            {
+                "id": "3C",
+                "question": "Lu berhasil ganggu Hadi, dia panik dan ngomong sendiri: 'Maaf Ray... gue gak punya pilihan.'",
+                "options": [
+                    {
+                        "text": "Terus teror dia",
+                        "nextChoice": "ENDING_C"
+                    },
+                    {
+                        "text": "Cari info lebih jauh",
+                        "nextChoice": "4D"
+                    }
+                ]
+            },
+            {
+                "id": "3D",
+                "question": "Lu dapet nama: 'Laura'. Siapa itu? Pacar lu? Lu bingung.",
+                "options": [
+                    {
+                        "text": "Flashback ingatan tentang Laura",
+                        "nextChoice": "4E"
+                    },
+                    {
+                        "text": "Abaikan, cari nama lain",
+                        "nextChoice": "4B"
+                    }
+                ]
+            },
+            {
+                "id": "3E",
+                "question": "Flashback: Kalung itu hadiah ulang tahun dari lu buat pacar lu...",
+                "options": [
+                    {
+                        "text": "Dia emang pelakunya!",
+                        "nextChoice": "4A"
+                    },
+                    {
+                        "text": "Masih ragu, cari bukti lain",
+                        "nextChoice": "4B"
+                    }
+                ]
+            },
+            {
+                "id": "3F",
+                "question": "Lu nemu jejak sepatu berdarah... ukurannya sama kayak partner kerja lu.",
+                "options": [
+                    {
+                        "text": "Kumpulin bukti, siapkan konfrontasi",
+                        "nextChoice": "ENDING_E"
+                    },
+                    {
+                        "text": "Lu frustasi dan nyerah",
+                        "nextChoice": "ENDING_B"
+                    }
+                ]
+            },
+            {
+                "id": "4A",
+                "question": "Lu dapet bukti kuat bahwa pacar lu dan Hadi terlibat. Tapi ada yang janggal...",
+                "options": [
+                    {
+                        "text": "Gali lebih dalam, siapa otak sebenarnya?",
+                        "nextChoice": "ENDING_D"
+                    },
+                    {
+                        "text": "Udah cukup, bongkar semua sekarang juga",
+                        "nextChoice": "ENDING_A"
+                    }
+                ]
+            },
+            {
+                "id": "4B",
+                "question": "Bukti makin membingungkan. Ada file rekaman yang nunjukin... lu sendiri nulis surat bunuh diri?",
+                "options": [
+                    {
+                        "text": "Gak percaya, ini pasti jebakan",
+                        "nextChoice": "ENDING_D"
+                    },
+                    {
+                        "text": "Terima semuanya, mungkin emang bener...",
+                        "nextChoice": "ENDING_F"
+                    }
+                ]
+            },
+            {
+                "id": "4C",
+                "question": "Lu teriak tapi mereka gak denger. Tapi partner lu tiba-tiba nengok ke arah lu...",
+                "options": [
+                    {
+                        "text": "Terus muncul, paksa dia ngomong",
+                        "nextChoice": "ENDING_C"
+                    },
+                    {
+                        "text": "Hilang aja, mungkin udah cukup bukti",
+                        "nextChoice": "ENDING_B"
+                    }
+                ]
+            },
+            {
+                "id": "4D",
+                "question": "Lu dapet jurnal lama punya Hadi, isinya tentang rasa bersalah dan... cinta ke Laura.",
+                "options": [
+                    {
+                        "text": "Laura? Siapa sebenernya dia?",
+                        "nextChoice": "4E"
+                    },
+                    {
+                        "text": "Lu udah cukup, konfrontasi sekarang",
+                        "nextChoice": "ENDING_E"
+                    }
+                ]
+            },
+            {
+                "id": "4E",
+                "question": "Flashback terakhir: Laura adalah kakak lu sendiri yang bunuh diri 3 tahun lalu...",
+                "options": [
+                    {
+                        "text": "Plot twist: Semua ini balas dendam ke lu?",
+                        "nextChoice": "ENDING_G"
+                    },
+                    {
+                        "text": "Coba cari tau siapa dalangnya sekarang",
+                        "nextChoice": "ENDING_D"
+                    }
+                ]
+            }
+        ],
+        "endings": [
+            {
+                "id": "ENDING_A",
+                "endingTitle": "Pacar lu Ternyata Dalangnya",
+                "description": "Setelah lu ngikutin dan ngintip HP-nya, ternyata dia punya affair sama partner kerja lu. Dan mereka yang ngerencanain pembunuhan lu biar bisa warisan dan bebas. Sad bro. Tapi lu berhasil bongkar semua, dan arwah lu bisa tenang. Ending bahagia? Kinda...",
+                "type": "True Ending"
+            },
+            {
+                "id": "ENDING_B",
+                "endingTitle": "Lu Gagal Ungkap Siapa Pembunuhnya",
+                "description": "Lu nyari kemana-mana, tapi gak cukup bukti. Lu lenyap begitu aja jadi arwah penasaran. Kasus ditutup, dunia lupa sama lu. Ending sedih.",
+                "type": "Bad Ending"
+            },
+            {
+                "id": "ENDING_C",
+                "endingTitle": "Lu Jadi Arwah Balas Dendam",
+                "description": "Lu gak bisa terima. Lu ganggu semua orang yang terlibat, bikin mereka ketakutan sampai akhirnya satu-satu nyerah. Tapi... lu juga gak bisa pergi. Jadi urban legend 'Detektif Gentayangan'. Ending serem.",
+                "type": "Dark Ending"
+            },
+            {
+                "id": "ENDING_D",
+                "endingTitle": "Plot Twist: Otak Sebenarnya Bukan Mereka",
+                "description": "Setelah ditelusuri lebih jauh, ternyata semua dikendalikan oleh seseorang dari masa lalu lu: mantan atasan yang dendam karena kasus lama. Dia manipulasi semua orang. Ending mind-blowing.",
+                "type": "Plot Twist Ending"
+            },
+            {
+                "id": "ENDING_E",
+                "endingTitle": "Partner Setia",
+                "description": "Partner kerja lu yang ternyata bener-bener peduli. Dia terus selidikin kasus lu meski semua nyuruh berhenti. Dia bongkar semuanya, dan lu bisa ninggalin dunia dengan senyum. Ending paling wholesome.",
+                "type": "Wholesome Ending"
+            },
+            {
+                "id": "ENDING_F",
+                "endingTitle": "Lu Bunuh Diri Tanpa Sadar",
+                "description": "Ternyata lu sendiri yang ngebunuh diri lu... tapi bukan karena depresi. Karena lu dihipnotis lewat trauma masa kecil yang dimanipulasi. Lu gak sadar semua ini selama hidup. Ending psikologis.",
+                "type": "Psychological Ending"
+            },
+            {
+                "id": "ENDING_G",
+                "endingTitle": "Balas Dendam Laura",
+                "description": "Semua ini rencana Laura yang jadi arwah penuh dendam. Dia nyuruh pacar dan partner lu ngebunuh lu. Karena lu pernah 'gagal' nyelamatin dia. Sekarang lu ngerti... dan akhirnya bisa minta maaf. Ending emosional dan sadis.",
+                "type": "Emotional Ending"
+            }
         ]
-      },
-      {
-        "id": "2A",
-        "question": "Lu liat pacar lu ngobrol sama seseorang di telepon. Tapi ngomongnya aneh...",
-        "options": [
-          {
-            "text": "Intip isi teleponnya",
-            "nextChoice": "3A"
-          },
-          {
-            "text": "Percaya aja dulu, lanjut ngikutin",
-            "nextChoice": "3B"
-          }
-        ]
-      },
-      {
-        "id": "2B",
-        "question": "Lu denger rekan kerja lu, Detektif Hadi, bilang ke bos kalau kasus lu mau ditutup.",
-        "options": [
-          {
-            "text": "Marah, coba manifestasiin diri biar bisa ganggu dia",
-            "nextChoice": "3C"
-          },
-          {
-            "text": "Catet semua info yang dia bilang, siapa tau ada nama-nama penting",
-            "nextChoice": "3D"
-          }
-        ]
-      },
-      {
-        "id": "2C",
-        "question": "Lu nemu kalung kecil di deket TKP. Kayaknya milik seseorang yang dikenal.",
-        "options": [
-          {
-            "text": "Flashback... inget siapa yang punya kalung itu?",
-            "nextChoice": "3E"
-          },
-          {
-            "text": "Cuekin, lanjut nyari petunjuk lain",
-            "nextChoice": "3F"
-          }
-        ]
-      }
-    ],
-    "endings": [
-      {
-        "id": "ENDING_A",
-        "endingTitle": "Pacar lu Ternyata Dalangnya",
-        "description": "Setelah lu ngikutin dan ngintip HP-nya, ternyata dia punya affair sama partner kerja lu. Dan mereka yang ngerencanain pembunuhan lu biar bisa warisan dan bebas. Sad bro. Tapi lu berhasil bongkar semua, dan arwah lu bisa tenang. Ending bahagia? Kinda...",
-        "type": "True Ending"
-      },
-      {
-        "id": "ENDING_B",
-        "endingTitle": "Lu Gagal Ungkap Siapa Pembunuhnya",
-        "description": "Lu nyari kemana-mana, tapi gak cukup bukti. Lu lenyap begitu aja jadi arwah penasaran. Kasus ditutup, dunia lupa sama lu. Ending sedih.",
-        "type": "Bad Ending"
-      },
-      {
-        "id": "ENDING_C",
-        "endingTitle": "Lu Jadi Arwah Balas Dendam",
-        "description": "Lu gak bisa terima. Lu ganggu semua orang yang terlibat, bikin mereka ketakutan sampai akhirnya satu-satu nyerah. Tapi... lu juga gak bisa pergi. Jadi urban legend 'Detektif Gentayangan'. Ending serem.",
-        "type": "Dark Ending"
-      },
-      {
-        "id": "ENDING_D",
-        "endingTitle": "Plot Twist: Lu Bunuh Diri",
-        "description": "Semua petunjuk nyambung ke satu titik. Ternyata... yang ngebunuh lu adalah... lu sendiri. Karena tekanan kerja dan pengkhianatan orang terdekat. Ending plot twist yang bikin diem.",
-        "type": "Psychological Ending"
-      },
-      {
-        "id": "ENDING_E",
-        "endingTitle": "Partner Setia",
-        "description": "Partner kerja lu yang ternyata bener-bener peduli. Dia terus selidikin kasus lu meski semua nyuruh berhenti. Dia bongkar semuanya, dan lu bisa ninggalin dunia dengan senyum. Ending paling wholesome.",
-        "type": "Wholesome Ending"
-      }
-    ]
-  }
+    }
 ]
