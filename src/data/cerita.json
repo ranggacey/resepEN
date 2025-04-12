@@ -1,0 +1,103 @@
+[
+{
+    "id": 1,
+    "title": "Kisah Detektif Korban Pembunuhan",
+    "thumbnail": "/images/story2.jpg",
+    "description": "Kisah detektif yang jadi korban pembunuhan? Wait what?! Cerita ini penuh plot twist dan pilihan yang bisa bikin lu nyesel seumur hidup.",
+    "intro": "Lu main jadi Detektif Ray. Tapi tenang, ini bukan detektif biasa. Lu dibunuh di awal cerita, terus lu bangkit lagi dalam bentuk roh. Misi lu? Cari tau siapa yang bunuh lu... dari alam baka. Satu-satunya cara buat pergi dengan tenang, ya bongkar semuanya.",
+    "choices": [
+      {
+        "id": "1A",
+        "question": "Lu sadar udah mati. Sekarang, mau ngapain dulu?",
+        "options": [
+          {
+            "text": "Ikutin pacar lu yang nangis-nangis di kuburan",
+            "nextChoice": "2A"
+          },
+          {
+            "text": "Masuk ke kantor polisi, siapa tau bisa nguping",
+            "nextChoice": "2B"
+          },
+          {
+            "text": "Keliling tempat kejadian perkara, cari petunjuk",
+            "nextChoice": "2C"
+          }
+        ]
+      },
+      {
+        "id": "2A",
+        "question": "Lu liat pacar lu ngobrol sama seseorang di telepon. Tapi ngomongnya aneh...",
+        "options": [
+          {
+            "text": "Intip isi teleponnya",
+            "nextChoice": "3A"
+          },
+          {
+            "text": "Percaya aja dulu, lanjut ngikutin",
+            "nextChoice": "3B"
+          }
+        ]
+      },
+      {
+        "id": "2B",
+        "question": "Lu denger rekan kerja lu, Detektif Hadi, bilang ke bos kalau kasus lu mau ditutup.",
+        "options": [
+          {
+            "text": "Marah, coba manifestasiin diri biar bisa ganggu dia",
+            "nextChoice": "3C"
+          },
+          {
+            "text": "Catet semua info yang dia bilang, siapa tau ada nama-nama penting",
+            "nextChoice": "3D"
+          }
+        ]
+      },
+      {
+        "id": "2C",
+        "question": "Lu nemu kalung kecil di deket TKP. Kayaknya milik seseorang yang dikenal.",
+        "options": [
+          {
+            "text": "Flashback... inget siapa yang punya kalung itu?",
+            "nextChoice": "3E"
+          },
+          {
+            "text": "Cuekin, lanjut nyari petunjuk lain",
+            "nextChoice": "3F"
+          }
+        ]
+      }
+    ],
+    "endings": [
+      {
+        "id": "ENDING_A",
+        "endingTitle": "Pacar lu Ternyata Dalangnya",
+        "description": "Setelah lu ngikutin dan ngintip HP-nya, ternyata dia punya affair sama partner kerja lu. Dan mereka yang ngerencanain pembunuhan lu biar bisa warisan dan bebas. Sad bro. Tapi lu berhasil bongkar semua, dan arwah lu bisa tenang. Ending bahagia? Kinda...",
+        "type": "True Ending"
+      },
+      {
+        "id": "ENDING_B",
+        "endingTitle": "Lu Gagal Ungkap Siapa Pembunuhnya",
+        "description": "Lu nyari kemana-mana, tapi gak cukup bukti. Lu lenyap begitu aja jadi arwah penasaran. Kasus ditutup, dunia lupa sama lu. Ending sedih.",
+        "type": "Bad Ending"
+      },
+      {
+        "id": "ENDING_C",
+        "endingTitle": "Lu Jadi Arwah Balas Dendam",
+        "description": "Lu gak bisa terima. Lu ganggu semua orang yang terlibat, bikin mereka ketakutan sampai akhirnya satu-satu nyerah. Tapi... lu juga gak bisa pergi. Jadi urban legend 'Detektif Gentayangan'. Ending serem.",
+        "type": "Dark Ending"
+      },
+      {
+        "id": "ENDING_D",
+        "endingTitle": "Plot Twist: Lu Bunuh Diri",
+        "description": "Semua petunjuk nyambung ke satu titik. Ternyata... yang ngebunuh lu adalah... lu sendiri. Karena tekanan kerja dan pengkhianatan orang terdekat. Ending plot twist yang bikin diem.",
+        "type": "Psychological Ending"
+      },
+      {
+        "id": "ENDING_E",
+        "endingTitle": "Partner Setia",
+        "description": "Partner kerja lu yang ternyata bener-bener peduli. Dia terus selidikin kasus lu meski semua nyuruh berhenti. Dia bongkar semuanya, dan lu bisa ninggalin dunia dengan senyum. Ending paling wholesome.",
+        "type": "Wholesome Ending"
+      }
+    ]
+  }
+]
