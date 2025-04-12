@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "aos": "^2.3.4",
+    "framer-motion": "^12.6.5",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
