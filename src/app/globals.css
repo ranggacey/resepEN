@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,9 +7,12 @@
 /* Tetapkan font global */
 body {
   @apply bg-white text-black dark:bg-[#0d0d0d] dark:text-white;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Nunito', sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: 'Fredoka', sans-serif;
+}
 @property --angle {
   syntax: '<angle>';
   inherits: false;
