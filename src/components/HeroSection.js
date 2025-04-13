@@ -25,7 +25,7 @@ export default function HeroSection() {
           transition={{ delay: 0.3 }}
           className="text-base xs:text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 md:mb-8 max-w-xs xs:max-w-sm sm:max-w-lg md:max-w-2xl mx-auto leading-relaxed px-2"
         >
-          Jelajahi dunia petualangan yang penuh misteri, tantangan, dan cerita epik
+          Temukan petualangan yang tak terduga dan pilih jalanmu sendiri dalam cerita interaktif yang penuh kejutan!
         </motion.p>
 
         <motion.div
