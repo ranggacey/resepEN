@@ -9,7 +9,7 @@ export default function About() {
           RecipeFinder was created with a simple mission: to help people discover delicious recipes based on their dietary preferences, available ingredients, and nutritional needs.
         </p>
         <p className="text-gray-700 dark:text-gray-300">
-          Whether you're looking for quick weeknight dinners, special occasion meals, or recipes that accommodate specific dietary restrictions, RecipeFinder makes it easy to find exactly what you need.
+          Whether you&apos;re looking for quick weeknight dinners, special occasion meals, or recipes that accommodate specific dietary restrictions, RecipeFinder makes it easy to find exactly what you need.
         </p>
       </div>
       
@@ -34,7 +34,7 @@ export default function About() {
             <span className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-100 flex items-center justify-center mr-3 font-semibold text-sm">3</span>
             <div>
               <h3 className="font-medium text-gray-800 dark:text-gray-200">Dietary Filters</h3>
-              <p className="text-gray-600 dark:text-gray-400">Easily find recipes that match your dietary preferences, whether you're vegetarian, vegan, gluten-free, or following another diet.</p>
+              <p className="text-gray-600 dark:text-gray-400">Easily find recipes that match your dietary preferences, whether you&apos;re vegetarian, vegan, gluten-free, or following another diet.</p>
             </div>
           </li>
           <li className="flex">
