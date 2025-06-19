@@ -9,24 +9,34 @@ export default function RootLayout({ children }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Check for saved theme or system preference
-    const savedTheme = localStorage.getItem("theme");
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle("dark", initialTheme === "dark");
+    // This code only runs on the client
     setMounted(true);
+    
+    try {
+      // Check for saved theme or system preference
+      const savedTheme = localStorage.getItem("theme");
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
+      setTheme(initialTheme);
+      document.documentElement.classList.toggle("dark", initialTheme === "dark");
+    } catch (error) {
+      console.error("Error accessing localStorage or window:", error);
+    }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    try {
+      const newTheme = theme === "light" ? "dark" : "light";
+      setTheme(newTheme);
+      localStorage.setItem("theme", newTheme);
+      document.documentElement.classList.toggle("dark", newTheme === "dark");
+    } catch (error) {
+      console.error("Error accessing localStorage:", error);
+    }
   };
 
-  // Prevent flash of wrong theme before mount
+  // Basic layout for SSR and before hydration
   if (!mounted) {
     return (
       <html lang="en">
